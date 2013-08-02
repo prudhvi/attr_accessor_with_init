@@ -1,6 +1,6 @@
-require "attr_acessor_with_init/version"
+require "attr_accessor_with_init/version"
 
-module AttrAcessorWithInit
+module AttrAccessorWithInit
   def attr_with_init(*args)
     attr_accessor *args
 
@@ -15,5 +15,5 @@ module AttrAcessorWithInit
 end
 
 class Module
-  include AttrAcessorWithInit
+  include AttrAccessorWithInit
 end
