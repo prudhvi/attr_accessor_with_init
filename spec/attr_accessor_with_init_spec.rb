@@ -16,6 +16,13 @@ describe AttrAccessorWithInit do
         expect(A).to receive(:attr_accessor) { :hello }
         A.send(:attr_with_init, :hello)
       end
+
+      it "should raise MultipleUsageException when used more than one time " do
+        expect do
+          A.send(:attr_with_init, :hello)
+          A.send(:attr_with_init, :hai)
+        end.to raise_error(MultipleUsageException)
+      end
     end
   end
 end
