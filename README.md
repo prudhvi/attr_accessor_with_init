@@ -1,4 +1,5 @@
 # AttrAcessorWithInit
+[![Build Status](https://secure.travis-ci.org/prudhvi/attr_accessor_with_init?branch=master)](http://travis-ci.org/prudhvi/attr_accessor_with_init)
 
 TODO: Write a gem description
 
